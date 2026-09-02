@@ -13,3 +13,14 @@
 
 
 # ?????
+import random
+import math
+n = 0
+N = int(input("Pisteiden  kokonaismäärä: "))
+for i in range(N):
+    x = random.random()
+    y = random.random()
+    if (x**float(2))+(y**float(2))<1:
+        n = n + 1
+c = 4 * n / N
+print(f"π ≈ {c:.3}")
