@@ -1,6 +1,6 @@
 from math import pi
 def pizza(num, hinta):
-    h = num / 2
+    h = num / 100
     p = pi*(h*h)
     c = hinta / p
     return c
