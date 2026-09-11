@@ -4,4 +4,5 @@ while num != "":
     numbers.append(num)
     num = input("Syötä seuraava numero: ")
 numbers.sort(key=int, reverse=True)
-print(numbers[0:5])
+for num in numbers:
+    print(num)

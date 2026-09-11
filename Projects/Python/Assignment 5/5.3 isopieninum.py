@@ -1,6 +1,5 @@
 numbers = []
 num = input("Anna luku: ")
-numbers.append(num)
 while not num.isnumeric():
     print("Ei numero!")
     num = input("Anna luku: ")
@@ -17,3 +16,19 @@ while num != "":
         if num.isnumeric():
             numbers.append(num)
 print(f"Suurin: {max(numbers)} Pienin: {min(numbers)}")
+
+# Toinen
+luku = int(input("Syötä luku: "))
+suurin = luku
+pienin = luku
+while True:
+    try:
+        luku = int(input("Syötä luku tai lopeta painamalla Enter: "))
+        if luku > suurin:
+            suurin = luku
+        if luku < pienin:
+            pienin = luku
+    except ValueError:
+        break
+print(suurin)
+print(pienin)
