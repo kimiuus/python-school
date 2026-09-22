@@ -11,13 +11,12 @@ class Auto:
         elif self.spd < 0:
             self.spd = 0
         return self.spd
+    def kulje(self, hour):
+        self.matka += hour * self.spd
 auto = Auto("ABC-123", 142)
 print(f"{auto.rekisteri}, {auto.maxspd}, {auto.spd}, {auto.matka}")
+auto.matka = 2000
 auto.kiihdytä(30)
-print(auto.spd)
-auto.kiihdytä(70)
-print(auto.spd)
-auto.kiihdytä(50)
-print(auto.spd)
-auto.kiihdytä(-200)
-print(auto.spd)
+print(auto.spd, auto.matka)
+auto.kulje(10)
+print(auto.spd, auto.matka)

@@ -7,9 +7,9 @@ class Hissi:
     def siirry_kerrokseen(self, kerrat):
         while self.kerros != kerrat:
             if self.kerros < kerrat:
-                h.kerros_ylös()
+                self.kerros_ylös()
             elif self.kerros > kerrat:
-                h.kerros_alas()
+                self.kerros_alas()
         print(f"Kerros: {self.kerros}")
         return
     def kerros_ylös(self):
