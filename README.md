@@ -1,5 +1,5 @@
 ﻿# python-school
-Suoritetut tehtävät 1-8, peliprojekti 3  
+Suoritetut tehtävät 1-11, peliprojekti vaihe 5
  ⡀⡀⡀⡀⡀⡀⢠⣾⣿⡿⠋⡀⡀⡀⡀⡀⡀⡀⣠⣾⣿⠿⣛⣛⣿⣿⣿⡀⡀  
 ⡀⡀⡀⢀⣀⣴⡾⠛⠉⡀⡀⡀⡀⡀⠄⢀⣤⣾⣿⣿⡿⠚⠉⡀⡀⡀⠉⠻⠄  
 ⣶⠾⠿⠛⠉⠁⡀⡀⡀⡀⡀⣒⣭⣴⣾⣿⣿⣿⣿⣿⣇⡔⡀⡀⡀⣀⢳⡄⠑  
