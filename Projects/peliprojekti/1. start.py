@@ -70,19 +70,33 @@ if jatka == "1":
 # Aloitus
 print()
 turn = 1
-trnmod = 1
+mult = 1
+trnmod = 1 * mult
 while turn < 10:
-    print("Turn: ", turn)
-    komento = input("\nAlue \nStats \nShop \nMenu\n")
+    print(f"Turn: {turn} Training Modifier: {trnmod}")
+    komento = input("\nAlue \nStats \nInventory \nMenu\n")
     if komento == "Alue" or komento == "1":
         sijainti = int(input(" 1. Track \n 2. Pool \n 3. Gym \n 4. Hill \n 5. Library \n"))
         coord = -1 + sijainti
         pelhahmo.sijainti = huoneetlista[(coord)]
         huone = huoneetlista[(coord)]
-        huone.generate(huone)
+        huone.generate(huone, pelhahmo, trnmod)
         turn += 1
     elif komento == "Stats" or komento == "2":
         stats(pelhahmo)
+    elif komento == "Inventory" or komento == "3":
+        if len(pelhahmo.inventory) >= 1:
+            print(pelhahmo.inventory)
+            use = input("Use item? (Y/N)")
+            if use == "Y":
+                itemnum = int(input("Enter item number: "))
+                listnum = 1 - itemnum
+                esine = pelhahmo.inventory[listnum]
+                print(esine)
+                esine.useitem(esine, pelhahmo)
+                print(mult)
+        else:
+            print("No items")
     elif komento == "Menu":
         print("\nPaused \nSave \nQuit \nBack")
         komento = input("")

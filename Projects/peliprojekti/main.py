@@ -10,10 +10,5 @@ def stattest(wit, spd):
     spd = spd + 2
     print(("Wit +6, Spd +2"))
     return (wit, spd)
-def savedata(pelhahmo):
-    res = json.dumps(pelhahmo.__dict__)
-    with open(f"data/{nimi}_savedata.json", "w") as saves:
-        saves.write(res)
-    print(res)
 def stats(pelhahmo):
     print(f"Name: {pelhahmo.nimi} \nLocation: {pelhahmo.sijainti.nimi} \nSpeed: {pelhahmo.spd} \nStamina: {pelhahmo.sta} \nPower: {pelhahmo.pwr} \nGuts: {pelhahmo.gts} \nWisdom: {pelhahmo.wit}")
