@@ -6,6 +6,7 @@ spd = int(110)
 from main import *
 from classes.hahmot import *
 hahmotlista = list(hahmolista)
+huoneetlista = list(huonelista)
 
 print("Aloita uusi peli vai jatka? (1 tai 2)")
 jatka = input("")
@@ -13,8 +14,8 @@ if jatka == "2":
     username = input("Syötä nimi: ")
     with open(f"data/{username}_savedata.json", "r") as saves:
         pelihahmo = json.load(saves)
-        print(f"Nimi: {pelihahmo["spd"]}")
-        pelhahmo = Hahmo(f"{pelihahmo["nimi"]}", f"{pelihahmo["spd"]}", f"{pelihahmo["sta"]}", f"{pelihahmo["pwr"]}", f"{pelihahmo["gts"]}", f"{pelihahmo["wit"]}")
+        print(f"Nimi: {pelihahmo["nimi"]}")
+        pelhahmo = Hahmo(f"{pelihahmo["nimi"]}", f"{pelihahmo["sijainti"]}", f"{pelihahmo["spd"]}", f"{pelihahmo["sta"]}", f"{pelihahmo["pwr"]}", f"{pelihahmo["gts"]}", f"{pelihahmo["wit"]}")
 elif jatka == "1":
     nimi = input("Syötä nimi: ")
     while True:
@@ -69,10 +70,19 @@ if jatka == "1":
 # Aloitus
 print()
 turn = 1
+trnmod = 1
 while turn < 10:
+    print("Turn: ", turn)
     komento = input("\nAlue \nStats \nShop \nMenu\n")
-    if komento == "Stats":
-        print(vars(pelhahmo))
+    if komento == "Alue" or komento == "1":
+        sijainti = int(input(" 1. Track \n 2. Pool \n 3. Gym \n 4. Hill \n 5. Library \n"))
+        coord = -1 + sijainti
+        pelhahmo.sijainti = huoneetlista[(coord)]
+        huone = huoneetlista[(coord)]
+        huone.generate(huone)
+        turn += 1
+    elif komento == "Stats" or komento == "2":
+        stats(pelhahmo)
     elif komento == "Menu":
         print("\nPaused \nSave \nQuit \nBack")
         komento = input("")
@@ -84,4 +94,3 @@ while turn < 10:
             res = json.dumps(pelhahmo.__dict__)
             with open(f"data/{nimi}_savedata.json", "w") as saves:
                 saves.write(res)
-    turn += 1
