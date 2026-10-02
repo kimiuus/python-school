@@ -11,4 +11,4 @@ def stattest(wit, spd):
     print(("Wit +6, Spd +2"))
     return (wit, spd)
 def stats(pelhahmo):
-    print(f"Name: {pelhahmo.nimi} \nLocation: {pelhahmo.sijainti.nimi} \nSpeed: {pelhahmo.spd} \nStamina: {pelhahmo.sta} \nPower: {pelhahmo.pwr} \nGuts: {pelhahmo.gts} \nWisdom: {pelhahmo.wit}")
+    print(f"Name: {pelhahmo.nimi} \nLocation: {pelhahmo.sijainti.nimi} \nSpeed: {pelhahmo.spd} \nStamina: {pelhahmo.sta} \nPower: {pelhahmo.pwr} \nGuts: {pelhahmo.gts} \nWisdom: {pelhahmo.wit}")60000000
