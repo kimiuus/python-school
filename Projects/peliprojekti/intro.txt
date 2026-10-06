@@ -1,0 +1,3 @@
+Hopeful Stakes Simulator  
+Welcome to Hopeful Stakes Simulator!
+Your goal is to guide your horse to victory in the first big race of the season.

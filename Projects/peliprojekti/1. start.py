@@ -12,6 +12,10 @@ from main import *
 from classes.hahmot import *
 hahmotlista = list(hahmolista)
 huoneetlista = list(huonelista)
+with open("intro.txt") as intro:
+    print(intro.read())
+with open("help.txt") as help:
+    print(help.read())
 
 print("Start a new game or continue? (1 / 2)")
 jatka = input("")
