@@ -1,5 +1,6 @@
 # spd = Speed, sta = Stamina, pwr = Power, gts = Guts, wit = Wisdom
 import random
+# Hahmot, metodi palauttaa hahmon tallennettavassa muodossa
 class Hahmo:
     def __init__(self, nimi, sijainti, spd: int, sta: int, pwr:int , gts:int, wit:int):
         self.nimi = nimi
@@ -20,22 +21,25 @@ class Hahmo:
             "gts": self.gts,
             "wit": self.wit
             }
-
+# Esineet, repr palauttaa printillä esineen luettavassa muodossa
 class Esine:
     def __init__(self, nimi, paino):
         self.nimi = nimi
         self.paino = paino
     def __repr__(self):
         return f"{self.nimi}: {self.paino}kg\n"
-            
+
+# Muutama esine
 song1 = Esine("Make Debut", 0.2)
 song2 = Esine("Full Speed Ahead", 0.2)
 song3= Esine("Believe", 0.5)
 esinelista = [song1, song2, song3]
 
+# Muuttujat huoneluokalle
 stat1 = 0
 stat2 = 0
 esinum = 0
+# Huoneluokka ja useita metodeita, generate generoi huoneen joka antaa hahmolle lisää ominaisuuspisteitä, voi mahdollisesti antaa esineen ja asettaa hahmon sijainnin
 class Huone:
     def __init__(self, nimi):
         self.nimi = nimi
@@ -127,11 +131,11 @@ class Huone:
                 print("Excellent training!\n +15 Stamina")
 
 
-
+# Valmiit hahmot
 hahmo1 = Hahmo("Seiun Sky", None, 120, 120, 108, 101, 101)
 hahmo2 = Hahmo("Chrono Genesis", None, 116, 109, 106, 100, 119)
 hahmolista = [hahmo1, hahmo2]
-
+# Huoneet
 start = Huone("Start")
 track = Huone("Track")
 pool = Huone("Pool")
