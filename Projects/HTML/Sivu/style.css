@@ -1,0 +1,41 @@
+body {
+        background-image: url(ktb.webp);
+        background-size: cover;
+        background-position:initial;
+        background-repeat: no-repeat;
+    }
+.topbar {
+        border-radius: 8px;
+        border-style:ridge;
+        padding: 3.5%;
+        width: 60%;
+        content: "";
+        top:2%;
+        left: 17%;
+        position:relative;
+        color:red;
+        background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgb(255, 255, 255) 100%);
+    }
+.baritems {
+    font-size: 2vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left:20%;
+    top:2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 15%;
+    width: 10%;
+.gap {
+    padding-right: 5px;
+}
+}
+.red {
+        color:red;
+    }
+.space {
+    padding: 3%;
+}
