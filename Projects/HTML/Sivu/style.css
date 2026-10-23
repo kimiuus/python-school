@@ -1,41 +1,57 @@
 body {
-        background-image: url(ktb.webp);
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(mainbg.jpg);
         background-size: cover;
-        background-position:initial;
+        background-position: center;
         background-repeat: no-repeat;
     }
+
 .topbar {
-        border-radius: 8px;
-        border-style:ridge;
-        padding: 3.5%;
-        width: 60%;
-        content: "";
-        top:2%;
-        left: 17%;
-        position:relative;
-        color:red;
-        background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgb(255, 255, 255) 100%);
+    padding: 2%;
+    border-style:ridge;
+    color:whitesmoke;
+    background: linear-gradient(rgb(134, 134, 134) 0%, rgb(255, 255, 255) 100%);
     }
-.baritems {
+
+.topbar a {
+    background-color: rgba(255, 0, 0, 0);
+    border-style: groove;
     font-size: 2vw;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 5%;
+    transition: all 0.5s ease-in-out;
+}
+
+.topbar a:hover {
+    opacity: 1;
+    background-color: whitesmoke;
+}
+    
+
+.topbar a.active {
+    background-color: whitesmoke;
+    color: purple;
+}
+
+.baritems {
+    top: 12px;
     position: absolute;
-    left:20%;
-    top:2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
+
+.baritemsright {
+    text-align: right;
+}
+
 .logo {
-    height: 15%;
-    width: 10%;
-.gap {
-    padding-right: 5px;
+    max-height: 30vw;
+    max-width: 17%;
+    height: auto;
+    width: auto;
+    transition: all 0.5s ease-in-out;
 }
-}
+
 .red {
         color:red;
     }
-.space {
-    padding: 3%;
-}
