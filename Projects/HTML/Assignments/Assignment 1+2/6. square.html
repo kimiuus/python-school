@@ -1,0 +1,22 @@
+<html>
+<body>
+<form id="mainForm">
+    <label for="name">Enter number:</label>
+    <input type="text" id="num" name="num"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<p id="show">No calculation</p>
+<script>
+const answer = confirm("Perform a square root calculation?")
+if (answer === true) {
+    document.getElementById("mainForm").style.visibility="visible";
+    document.getElementById("show").style.visibility="hidden";
+} else if (answer === false) {
+        document.getElementById("mainForm").style.visibility="hidden";
+        document.getElementById("show").style.visibility="visible";
+    }
+</script>
+<p id="target"></p>
+<script src ="6. square.js" defer></script>
+</body>
+</html>
