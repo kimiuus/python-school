@@ -1,0 +1,21 @@
+<!-- Test, ignore-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>10. Vote</title>
+</head>
+<body>
+    <div class="input-group">
+        <label for="numNames">Number of names:</label>
+        <input type="number" id="numNames" min="1" max="50" placeholder="e.g. 3">
+        <button type="button" onclick="generateFields()">Set Fields</button>
+    </div>
+
+    <form id="votingForm" onsubmit="storeNames(event)" style="display: none;">
+        <div id="nameFieldsContainer"></div>
+        <button type="submit">Initialize and Store Data</button>
+    </form>
+<script src ="10. vote.js" defer></script>
+</body>
+</html>
