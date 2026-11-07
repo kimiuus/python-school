@@ -12,4 +12,4 @@ Completed assignments:
 - Task 8: 3 p  
 **Total 20p**  
   
-<img width="907" height="1024" alt="image" src="https://github.com/user-attachments/assets/5bdadd5e-ba54-4ebc-bdbb-bccce8e95c36" />
+<img width="507" height="624" alt="image" src="https://github.com/user-attachments/assets/5bdadd5e-ba54-4ebc-bdbb-bccce8e95c36" />
