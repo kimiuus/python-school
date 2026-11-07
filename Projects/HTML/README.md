@@ -12,4 +12,4 @@ Completed assignments:
 - Task 8: 3 p  
 **Total 20p**  
   
-<p align="center"><img width="400" src="https://cdn.discordapp.com/attachments/1356646777142509729/1564988426569121832/ezgif-maker.gif?ex=6ae9dc0c&is=6ae88a8c&hm=52e6a901f13cb28f4a23898147b6905874f09159eb313d2682cbdfdc7c3298e0&" alt="description" /></p>  
+<img width="457" height="524" alt="image" src="https://github.com/user-attachments/assets/5bdadd5e-ba54-4ebc-bdbb-bccce8e95c36" />
