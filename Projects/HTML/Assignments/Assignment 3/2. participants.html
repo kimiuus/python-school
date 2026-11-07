@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2. Participants</title>
+</head>
+<body>
+    <div class="inputGroup">
+        <label for="numNames">Number of names:</label>
+        <input type="number" id="numNames">
+        <button type="button" onclick="generateFields()">Submit</button>
+    </div>
+
+    <form id="namesList" onsubmit="storeNames(event)" style="display: none;">
+        <div id="nameFields"></div>
+        <button type="submit">Submit</button>
+    </form>
+<div id ="output" style="display: none;"></div>
+<div id="target"></div>
+<script src ="2. participants.js" defer></script>
+</body>
+</html>
