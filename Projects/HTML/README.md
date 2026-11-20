@@ -25,7 +25,7 @@ Completed assignments:
 - Task 5: 2 p  
 **Total 10p**  
 
-  [My link to js mod 3 folder at users.metropolia.fi](https://users.metropolia.fi/~kimiu/HTML/Assignments/Assignment%204/)  
+[My link to js mod 4 folder at users.metropolia.fi](https://users.metropolia.fi/~kimiu/HTML/Assignments/Assignment%204/)  
   
 Completed assignments:  
   
