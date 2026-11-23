@@ -35,5 +35,21 @@ Completed assignments:
 - Task 4: 2 p  
 - Task 10: 2 p  
 **Total 10p**
+
+[My link to js mod 5 folder at users.metropolia.fi](https://users.metropolia.fi/~kimiu/HTML/Assignments/Assignment%205/)  
+  
+Completed assignments:  
+  
+- Task 1: 2 p  
+- Task 2: 3 p  
+- Task 3: 7 p
+**Total 12p**
+
+[My link to Flask folder at users.metropolia.fi](https://users.metropolia.fi/~kimiu/HTML/Assignments/Flask/)
+
+Completed assignments:
+
+- Task 2: 10 p
+**Total 10p**
   
 <img width="457" height="524" alt="image" src="https://github.com/user-attachments/assets/5bdadd5e-ba54-4ebc-bdbb-bccce8e95c36" />
