@@ -1,12 +1,14 @@
 {
-   "hello": "hei",
-   "computer": "tietokone",
-   "school": "koulu",
-   "six": "kuusi",
-   "spruce": "kuusi",
-   "moon": "kuu",
-   "marble": "kuula",
-   "frost": "kuura",
-   "hot": "kuuma",
-   "hearing": "kuulo"
+    "hello": "hei",
+    "computer": "tietokone",
+    "school": "koulu",
+    "six": "kuusi",
+    "spruce": "kuusi",
+    "moon": "kuu",
+    "marble": "kuula",
+    "frost": "kuura",
+    "hot": "kuuma",
+    "hearing": "kuulo",
+    "chair": "tuoli",
+    "milk": "maito"
 }
